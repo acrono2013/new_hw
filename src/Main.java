@@ -11,7 +11,15 @@ public class Main {
                 left++;
             } else if (!Character.isLetter(chars[right])) {
                 right--;
-    }
-}
+            } else {
+                char tmp = chars[left];
+                chars[left] = chars[right];
+                chars[right] = tmp;
+                left++;
+                right--;
+            }
+        }
+        String res = new String(chars);
+        System.out.println(res);
     }
 }
