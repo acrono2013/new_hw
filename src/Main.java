@@ -3,5 +3,8 @@
 public class Main {
     public static void main(String[] args) {
         String phrase = "J@va the be$t!123";
+        char [] chars = phrase.toCharArray();
+        int left = 0;
+        int right = chars.length - 1;
     }
 }
