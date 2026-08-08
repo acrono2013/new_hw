@@ -1,25 +1,11 @@
+import com.example.util.StringUtil;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        String phrase = "J@va the be$t!123";
-        char [] chars = phrase.toCharArray();
-        int left = 0;
-        int right = chars.length - 1;
-        while (left < right) {
-            if (!Character.isLetter(chars[left])) {
-                left++;
-            } else if (!Character.isLetter(chars[right])) {
-                right--;
-            } else {
-                char tmp = chars[left];
-                chars[left] = chars[right];
-                chars[right] = tmp;
-                left++;
-                right--;
-            }
-        }
-        String res = new String(chars);
+        String phrase = "Your example phrase";
+        String res = StringUtil.reverseLetters(phrase);
         System.out.println(res);
     }
 }
