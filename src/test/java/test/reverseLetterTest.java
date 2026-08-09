@@ -26,4 +26,15 @@ public class reverseLetterTest {
          );
          System.out.println(result);
     }
+    @Test
+    public void oneLetter() {
+        String phrase = "a";
+        String result = StringUtil.reverseLetters(phrase);
+        ;
+        assertEquals(
+                "a",
+                result
+        );
+        System.out.println(result);
+    }
 }
