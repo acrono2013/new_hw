@@ -48,4 +48,15 @@ public class reverseLetterTest {
         );
         System.out.println(result);
     }
+    @Test
+    public void onlyLetters() {
+        String phrase = "abcdefg";
+        String result = StringUtil.reverseLetters(phrase);
+        ;
+        assertEquals(
+                "gfedcba",
+                result
+        );
+        System.out.println(result);
+    }
 }
