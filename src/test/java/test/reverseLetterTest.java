@@ -37,4 +37,15 @@ public class reverseLetterTest {
         );
         System.out.println(result);
     }
+    @Test
+    public void noLetters() {
+        String phrase = "123 !@#";
+        String result = StringUtil.reverseLetters(phrase);
+        ;
+        assertEquals(
+                "123 !@#",
+                result
+        );
+        System.out.println(result);
+    }
 }
