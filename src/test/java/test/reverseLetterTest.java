@@ -2,6 +2,7 @@ package test.java.test;
 import com.example.util.StringUtil;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class reverseLetterTest {
  @Test
@@ -58,5 +59,11 @@ public class reverseLetterTest {
                 result
         );
         System.out.println(result);
+    }
+    @Test
+    public void nullString () {
+       assertThrows(NullPointerException.class,
+               () -> StringUtil.reverseLetters(null)
+       );
     }
 }
