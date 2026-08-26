@@ -1,6 +1,7 @@
 package com.example.util;
 
 public class StringUtil {
+
     public static String reverseLetters (String phrase) {
         char [] chars = phrase.toCharArray();
         int left = 0;
