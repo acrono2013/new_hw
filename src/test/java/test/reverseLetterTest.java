@@ -65,4 +65,15 @@ public class reverseLetterTest {
                () -> StringUtil.reverseLetters(null)
        );
     }
+    @Test
+    public void noSymbol() {
+        String phrase = "";
+        String result = StringUtil.reverseLetters(phrase);
+        ;
+        assertEquals(
+                "",
+                result
+        );
+        System.out.println(result);
+    }
 }
